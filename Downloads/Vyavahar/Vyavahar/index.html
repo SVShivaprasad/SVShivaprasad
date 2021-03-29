@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title> Login</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Include JS File Here -->
+    <script src="js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <img src="Image/login.jpg" />
+        <form id="form_id" method="post" name="myform">
+            <h2> Enter Mobile number </h2>
+            <input type="tel" name="number" id="mobile_number" placeholder="+91 Registered Mobile Number" />
+            <input type="button" value="Send OTP" id="send_otp" />
+            <h3>Do you have an account?
+                <a href="Register.html"> Register Now</a>
+            </h3>
+        </form>
+    </div>
+
+    <script>
+        $('#send_otp').click(function () {
+            var mobile_number = document.getElementById("mobile_number").value;
+            $.ajax(
+                {
+                    type: "POST",
+                    url: 'http://13.59.235.78:8000/seller/login',
+                    dataType: 'json',
+                    data: {
+                        mobile_number: mobile_number
+                    },
+                    success: function (data) {
+                       swal ({
+    
+                               text: "OTP Sent!",
+                               type: "success"
+                               }).then(function() {
+                               window.location = "Otp.html";
+                             });
+                            }        
+                    });
+
+        });
+
+    </script>
+</body>
+</html>

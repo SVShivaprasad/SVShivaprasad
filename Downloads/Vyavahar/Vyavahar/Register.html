@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="css/register.css"/>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/> -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <script src="js/register.js"></script>
+   
+</head>
+<body> 
+    <div class="main">
+	<h2 style="text-align: center;"></h2> 
+	<form id="RegForm" action="/submit.php"
+		onsubmit="return Validation()" method="post"> 
+      <!-- <i class="fa fa-user fa-2x cust" ></i> -->
+        <input type="text"  
+        size="65" id="email"  class="place" placeholder="&#xf0e0; Email Address">
+    </br>
+     
+		 <input type="text"
+						size="65" id="shop"  class="place" placeholder="&#xf015; Bussiness/Shop name">
+		<br /> 
+	
+	
+        <input type="text"
+        size="65" id="address1" class="place"  placeholder="&#xf19c; Address1"/>
+<br /> 
+	
+<input type="text"
+size="65" id="address2" class="place"  placeholder="&#xf19c; Address2"/>
+<br /> 
+
+	
+<input type="text"
+size="65" id="city" class="place"  placeholder="&#xf19c; City"/>
+<br /> 
+	
+<input type="text"
+size="65" id="state" class="place" placeholder="&#xf19c; State"/>
+<br /> 
+
+			
+<input type="tel"
+size="65" id="pincode" class="place" placeholder="&#xf041; Enter the pin"/>
+<br /> 
+		
+	
+			
+			
+		<input type="button" value="Next" id="submit" onclick="Validation()"/>
+</br>
+    <span class ="back">Have you registered?</span> <a href="index.html" >Back</a>
+	</form> 
+</div>
+</body> 
+
+</html>

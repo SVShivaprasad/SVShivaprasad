@@ -1,0 +1,95 @@
+
+
+
+
+div { 
+    box-sizing: border-box; 
+    width: 100%; 
+    border: 100px solid black; 
+    float: left; 
+    align-content: center; 
+    align-items: center; 
+} 
+/* 
+ */
+ 
+
+div.main{
+    margin-left: 35%;
+    
+    background-color:white;
+    justify-items: center;
+    /* align-items: center; */
+  width: 600px;
+  height:750px ;
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: "Comic Sans";
+  float:left;
+  margin-top:5%;
+  }
+  body{
+    background-color:black;
+    /* align-items: center;
+    justify-items: center; */
+  }
+  
+ 
+  
+  h2{
+    background-color:white;
+    padding: 30px 35px;
+    margin: -10px -50px;
+    text-align:center;
+    border-radius: 10px 10px 0 0;
+    font-family: "Comic Sans";
+    }
+
+form { 
+    margin: 0 auto; 
+    width: 600px; 
+}
+
+
+input{
+    margin-left: 40px;
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+
+    }
+    input[type=button]{
+        font-size: 16px;
+        background: linear-gradient(#e7ab3c 5%, #e7ab3c 100%);
+        border: 1px solid #e5a900;
+        color: #4E4D4B;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 40px;
+        width: 410px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 10px 0;
+        outline:none;
+        }
+        input[type=button]:hover{
+        background: linear-gradient(#e7ab3c 5%, #e7ab3c 100%);
+       
+        }
+        .back{
+          margin-left:50px ;
+        }
+        .cust{
+          margin-left: 0px;
+        }
+        .place{
+          font-family: "fontawesome";
+        }
+      

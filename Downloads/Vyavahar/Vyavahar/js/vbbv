@@ -1,0 +1,6 @@
+if (document.RegForm.email.value !=mailformat && email.value!=" "){
+    document.write("please enter the valid email");
+    // alert( "Please enter valid email address" );
+    document.RegForm.email.focus() ;
+    return false;
+}
